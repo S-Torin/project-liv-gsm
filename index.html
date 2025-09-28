@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="LIV-GSM: Photo-Realistic LiDAR-Inertial-Visual Gaussian Mapping with a Unified Hybrid Map">
+  <meta name="keywords" content="LiDAR-Inertial-Visual Odometry, Point Line Feature, Direct Visual Odometry">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LIV-GSM: Photo-Realistic LiDAR-Inertial-Visual Gaussian Mapping with a Unified Hybrid Map</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6PYDPEBZZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-L6PYDPEBZZ');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://S-Torin.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">More Research</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://S-Torin.github.io/project-point-line-livo">Point-Line LIVO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width has-text-centered">
+            <h1 class="title is-1 publication-title">
+              LIV-GSM: Photo-Realistic LiDAR-Inertial-Visual Gaussian Mapping with a Unified Hybrid Map
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/S-Torin/" target="_blank">Tong Shi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">Hai Yu<sup>1</sup></span>,
+              <span class="author-block">Kun Qian<sup>1#</sup></span>
+            </div>
+
+            <div class="column">
+              <h2 class="is-size-6"># Corresponding Author</h2>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>School of Automation, Southeast University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="#todo" class="external-link button is-normal is-rounded is-dark"
+                    style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon" target="_blank">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#todo" class="external-link button is-normal is-rounded is-dark"
+                    style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon" target="_blank">
+                    <span class="icon"><i class="fas fa-video"></i></span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/S-Torin/LIV-GSM" class="external-link button is-normal is-rounded is-dark"
+                    target="_blank">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark"
+                    style="opacity: 0.5; cursor: not-allowed;" title="Coming Soon">
+                    <span class="icon"><i class="fas fa-cube"></i></span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <div class="column has-text-centered" style="margin-top: -5px;">
+              <div style="display: flex; justify-content: center; align-items: flex-start; gap: 2.5%; width: 100%;">
+                <img src="./static/images/hmap1.png" alt="Hybrid Map"
+                  style="flex: 1; max-width: 44%; height: auto; object-fit: contain;">
+                <img src="./static/images/hmap2.png" alt="Hybrid Map"
+                  style="flex: 1; max-width: 55%; height: auto; object-fit: contain;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div class="notification has-text-weight-bold mb-6"
+            style="background: linear-gradient(135deg, #f5f9ff 0%, #e1edff 100%); border-left: 4px solid #002D72; font-size: 0.92rem;">
+            <div class="is-flex is-align-items-center">
+              <span class="icon is-large mr-3" style="color: #0072CE;">
+                <i class="fas fa-bolt"></i>
+              </span>
+              <div>
+                <strong style="color: #002D72;">TL;DR:</strong>
+                <span style="display: inline; white-space: normal; color: #333;">
+                  This work introduces <strong style="color: #002D72;">LIV-GSM</strong>, a real-time
+                  LiDAR-Inertial-Visual Gaussian mapping framework for photo-realistic reconstruction with enhanced
+                  novel view synthesis (NVS) generalization.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Comming Soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3" style="margin-top: -30px;">Overview</h2>
+          <div class="column has-text-centered" style="margin-top: -5px;">
+            <img src="./static/images/overview1.png" alt="Overview Image"
+              style="max-width: 60%; height: auto; object-fit: contain;">
+          </div>
+          <div class="content has-text-justified">
+            <p style="margin-top: 10px;">
+              Comming Soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3" style="margin-top: -30px;">Method</h2>
+          <div class="column has-text-centered" style="margin-top: -20px;">
+            <img src="./static/images/overview2.png" alt="Method Image" class="center">
+          </div>
+          <div class="content has-text-justified">
+            <p style="margin-top: 10px;">
+              Comming Soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3" style="margin-top: -30px;">Mapping Experiments</h2>
+          <div class="column has-text-centered" style="margin-top: 5px;">
+            <img src="./static/images/mapping.png" alt="Mapping Image"
+              style="max-width: 70%; height: auto; object-fit: contain;" class="center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3" style="margin-top: -30px;">Ablation Study</h2>
+          <div class="column has-text-centered" style="margin-top: 5px;">
+            <img src="./static/images/ablation.png" alt="Ablation Image" class="center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@ARTICLE{pl-livo,
+  author={Shi, Tong and Yu, Hai and Qian, Kun},
+  journal={},
+  title={LIV-GSM: Photo-Realistic LiDAR-Inertial-Visual Gaussian Mapping with a Unified Hybrid Map},
+  year={},
+  volume={},
+  number={},
+  pages={},
+  doi={}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This website template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+              We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this
+              template.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
